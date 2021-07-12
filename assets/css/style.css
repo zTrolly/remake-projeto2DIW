@@ -1,0 +1,70 @@
+@import url("./reset.css");
+/*========== CORES ==========*/
+  :root{
+    --color-1:#660708;
+    --color-2:#A4161A;
+    --color-3:#BA181B;
+    --color-4:#E5383B;
+    --color-5:#B1A7A6;
+    --color-6:#D3D3D3;
+    --color-7:#FFFFFF;
+    --color-8:#161A1D;
+  }
+/*===========================*/
+
+/*========== FONTS ==========*/
+body{
+  font-family: "Poppins";
+}
+/*===========================*/
+
+/*========== HEADER ==========*/
+header{
+  width: 100%;
+  background-color: var(--color-8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+header .menu{
+  display: flex;
+}
+
+.active{
+  background-color: var(--color-3);
+  color:  var(--color-7);
+  box-shadow: 5px 10px 20px rgba(250, 50, 50, 0.411);
+  transition: all ease 0.2s;
+}
+.menu-item{
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 1
+  rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  color: var(--color-7);
+}
+.menu-item a{
+  color: var(--color-7);
+  text-decoration: none;
+}
+.menu-item:hover{
+  background-color: var(--color-3);
+  color:  var(--color-7);
+  box-shadow: 5px 10px 20px rgba(250, 50, 50, 0.411);
+  transition: all ease 0.2s;
+  border-radius: 3px;
+}
+/*============================*/
